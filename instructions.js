@@ -293,7 +293,7 @@
 ### 5) Delete Routes
 
 - Create a new Postman request in the ExpressIntro collection called "delete-movie". This request should make a DELETE request to localhost:3000/{your-movie-title} (replace {your-movie-title} with the title of the movie you created in the "new-movie" request or the new title you gave that movie in the "update-movie" request).
-- Create a new DELETE route that has the path "/delete-movie/:titleToDelete". Inside the route handler function, implement the following:
+- Create a new DELETE route that has the path . Inside the route handler function, implement the following:
 	- Get the title of the movie to delete from the req.params and assign it to a variable titleToDelete.
 	- Use the .findIndex() method on favoriteMovieList to find the index of the movie object whose title matches titleToDelete and store that in a variable called deleteMovieIndex. 
 	- Use the .splice() method on favoriteMovieList to remove the object at the deleteMovieIndex index.
